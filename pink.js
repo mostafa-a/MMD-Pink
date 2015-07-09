@@ -68,6 +68,9 @@ function event_loop(){
 			stmt_botLeft.style.visibility = 'hidden';
 			stmt_botCenter.style.visibility = 'hidden';
 			stmt_botRight.style.visibility = 'hidden';
+			
+			var snd = new Audio("blop.mp3"); // buffers automatically when created
+			snd.play();
 		});
 	}
 	else if(activityValue > 375){
@@ -85,6 +88,9 @@ function event_loop(){
 			stmt_botLeft.style.visibility = 'hidden';
 			stmt_botCenter.style.visibility = 'hidden';
 			stmt_botRight.style.visibility = 'visible';
+			
+			var snd = new Audio("applause.mp3"); // buffers automatically when created
+			snd.play();
 		});
 	}
 	else if(activityValue > 325){
@@ -106,6 +112,8 @@ function event_loop(){
 			
 			//stmt_topRight.style.visibility = 'hidden';
 			//stmt_topRight.style.color= 'Blue';
+			var snd = new Audio("blop.mp3"); // buffers automatically when created
+			snd.play();
 		});
 	}
 	else if(activityValue > 250){
@@ -270,7 +278,8 @@ $(document).ready(function()
 });
 $(document).ready(function()
 {
-	$('#obj_a').click(function() {
+	$('#obj_a').click(function(e) {
+		//e.preventDefault();
 		var objA = document.getElementById("obj_a");
 		var objA_src = objA.getAttribute('src');
 		if(objA_src == "anim/placeholder.png"){
@@ -378,4 +387,35 @@ $(document).ready(function()
 
 });
 
+$(document).ready(function()
+{
+	
+	$('#wrapper').click(function(e) {
+		//alert(e.pageX + ' , ' + e.pageY);
+		/* var newImg = document.createElement("img");
+		newImg.width = '35';
+		newImg.height = '35';
+		newImg.setAttribute('id', "newImg");
+		newImg.setAttribute('src', "anim/objE_rotation_tapped.gif"); */
+		var snd = new Audio("blop.mp3"); // buffers automatically when created
+			snd.play();
+		
+		$('#wrapper').append($('<img>', {			
+		src : "anim/objE_rotation_tapped.gif",
+		id : "newImg",
+		width : 35, 
+		height : 35, 
+		alt : "Test Image", 
+		title : "Test Image"
+		}).css({
+        position: "absolute",
+        top: (e.pageY -17)  + "px",
+        left:  (e.pageX -17) + "px"
+    }));
+		
+		
+
+	});
+
+});
 
