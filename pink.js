@@ -70,7 +70,7 @@ function event_loop(){
 			stmt_botRight.style.visibility = 'hidden';
 			
 			var snd = new Audio("blop.mp3"); // buffers automatically when created
-			snd.play();
+			//snd.play();
 		});
 	}
 	else if(activityValue > 375){
@@ -90,7 +90,7 @@ function event_loop(){
 			stmt_botRight.style.visibility = 'visible';
 			
 			var snd = new Audio("applause.mp3"); // buffers automatically when created
-			snd.play();
+			//snd.play();
 		});
 	}
 	else if(activityValue > 325){
@@ -113,7 +113,7 @@ function event_loop(){
 			//stmt_topRight.style.visibility = 'hidden';
 			//stmt_topRight.style.color= 'Blue';
 			var snd = new Audio("blop.mp3"); // buffers automatically when created
-			snd.play();
+			//snd.play();
 		});
 	}
 	else if(activityValue > 250){
@@ -279,7 +279,7 @@ $(document).ready(function()
 $(document).ready(function()
 {
 	$('#obj_a').click(function(e) {
-		//e.preventDefault();
+		e.stopPropagation();
 		var objA = document.getElementById("obj_a");
 		var objA_src = objA.getAttribute('src');
 		if(objA_src == "anim/placeholder.png"){
@@ -304,6 +304,8 @@ $(document).ready(function()
 $(document).ready(function()
 {
 	$('#obj_b').click(function() {
+				e.stopPropagation();
+
 		var objB = document.getElementById("obj_b");
 		var objB_src = objB.getAttribute('src');
 		if(objB_src == "anim/placeholder.png"){
@@ -321,6 +323,8 @@ $(document).ready(function()
 $(document).ready(function()
 {
 	$('#obj_c').click(function() {
+				e.stopPropagation();
+
 		var objC = document.getElementById("obj_c");
 		var objC_src = objC.getAttribute('src');
 		if(objC_src == "anim/placeholder.png"){
@@ -338,6 +342,8 @@ $(document).ready(function()
 $(document).ready(function()
 {	
 	$('#obj_d').click(function() {
+				e.stopPropagation();
+
 		var objD = document.getElementById("obj_d");
 		var objD_src = objD.getAttribute('src');
 		if(objD_src == "anim/placeholder.png"){
@@ -355,6 +361,8 @@ $(document).ready(function()
 $(document).ready(function()
 {
 	$('#obj_e').click(function() {
+				e.stopPropagation();
+
 		var objE = document.getElementById("obj_e");
 		var objE_src = objE.getAttribute('src');
 		if(objE_src == "anim/placeholder.png"){
@@ -372,6 +380,8 @@ $(document).ready(function()
 $(document).ready(function()
 {
 	$('#obj_f').click(function() {
+				e.stopPropagation();
+
 		var objF = document.getElementById("obj_f");
 		var objF_src = objF.getAttribute('src');
 		if(objF_src == "anim/placeholder.png"){
@@ -397,7 +407,7 @@ $(document).ready(function()
 		newImg.height = '35';
 		newImg.setAttribute('id', "newImg");
 		newImg.setAttribute('src', "anim/objE_rotation_tapped.gif"); */
-		var snd = new Audio("blop.mp3"); // buffers automatically when created
+		var snd = new Audio("blop.mp3");
 			snd.play();
 		
 		$('#wrapper').append($('<img>', {			
