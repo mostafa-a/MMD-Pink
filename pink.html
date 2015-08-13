@@ -12,43 +12,18 @@
 		<span class="dummy-main">Loaded!</span>
 	</div>
 	-->
-	<div id="backgroundWrapper" style="background-color: #e3deca;">
 	<script src="pink.js"></script>
-	<script>
-		pink_startup();
-		
-	</script>
+	<script>pink_startup();</script>
+	
+<div id="title">Meditation on Baker-Miller Pink</br>by Thomas Raab</div>
+	
+
+<div id="backgroundWrapper" style="background-color: #eae6e6;">
+	
 	<div id="wrapper">
+		
 		<!-- BOX_TOP -->	
 		<div id="box_top">
-			<div class="objArea">
-				<div class="colLeft">
-					<div class="objContainer_topL">
-						<img id="obj_a" src="anim/objA_ slide_normal.gif" alt="placeholder" style="width:35px;height:35px;">
-					</div>
-					<div class="objContainer_topR">
-						<img id="StmtChangeTest" src="anim/placeholder.png" alt="placeholder" style="width:35px;height:35px;">
-					</div>
-				</div>
-				<div class="colCenter">
-					<div class="objContainer_topL">
-						<img class="obj_empty" src="anim/placeholder.png" alt="placeholder" style="width:35px;height:35px;">
-					</div>
-					<div class="objContainer_topR">
-						<img id="obj_b" src="anim/placeholder.png" alt="placeholder" style="width:35px;height:35px;">
-					</div>
-				</div>
-				<div class="colRight">
-					<div class="objContainer_topL">
-						<img id="obj_c" src="anim/placeholder.png" alt="placeholder" style="width:35px;height:35px;">
-					</div>
-					<div class="objContainer_topR">
-						<img class="obj_empty" src="anim/placeholder.png" alt="placeholder" style="width:35px;height:35px;">
-					</div>
-				</div>
-				<div class="clearing">
-				</div>
-			</div>
 				
 			<div class="stmtArea">
 				<div class="colLeft">
@@ -80,21 +55,21 @@
 		
 		<!-- BOX_AXIS -->		
 		<div id="box_axis">
-			<div id="colLeftAxis"></div>
-			<div id="colCenterAxis">
-				<div id="axis">
-					<svg id="axis_svg">
-						<line x1="0" y1="30" x2="500" y2="30" style="stroke:rgb(200,200,200);stroke-width:1" />
-						<line id="marker" x1="250" y1="20" x2="250" y2="40" style="stroke:rgb(200,200,200);stroke-width:1"/>
-						<text id="axisTypo" x="5" y="20">W</text>
-						<text id="axisTypo" x="485" y="20">E</text>
-					</svg>
-				</div>
+			<div id="colLeftAxis">
+				<svg height="50" width="50"><text class="axisTypo" x="20" y="50" transform="rotate(270 20,50)">WEST</text></svg>
 			</div>
-			<div id="colRightAxis"></div>
+			<div id="colCenterAxis">	
+					<svg height="30" width="1500">
+						<!--<line x1="0" y1="10" x2="670" y2="10" style="stroke:rgb(200,200,200);stroke-width:1" />-->
+						<rect id="markerBar" x="250" y="0" width="30" height="10" style="fill: rgb(255,145,175)"/>
+					</svg>
+			</div>
+			<div id="colRightAxis">
+				<svg height="50" width="50"><text class="axisTypo" x="10" y="10" transform="rotate(90 10,10)">EAST</text></svg>
+			</div>
 			<div class="clearing"></div>
+			<!--<svg height="30" width="60"><rect x="10" y="0" width="30" height="30" style="fill: rgb(255,0,0)"/></svg>-->
 		</div>
-		
 		<!-- BOX_BOTTOM -->	
 		<div id="box_bottom">
 			<div class="stmtArea">
@@ -116,42 +91,13 @@
 				</div>
 				<div class="clearing"></div>
 			</div>
-			
-			<div class="objArea">
-				<div class="colLeft">
-					<div class="objContainer_topL">
-						<img class="obj_empty" src="anim/placeholder.png" alt="placeholder" style="width:35px;height:35px;">
-					</div>
-					<div class="objContainer_topR">
-						<img id="obj_d" src="anim/placeholder.png" alt="placeholder" style="width:35px;height:35px;">
-					</div>
-				</div>
-				<div class="colCenter">
-					<div class="objContainer_topL">
-						<img id="obj_e" src="anim/placeholder.png" alt="placeholder" style="width:35px;height:35px;">
-					</div>
-					<div class="objContainer_topR">
-						<img class="obj_empty" src="anim/placeholder.png" alt="placeholder" style="width:35px;height:35px;">
-					</div>
-				</div>
-				<div class="colRight">
-					<div class="objContainer_topL">
-						<img class="obj_empty" src="anim/placeholder.png" alt="placeholder" style="width:35px;height:35px;">
-					</div>
-					<div class="objContainer_topR">
-						<img id="obj_f" src="anim/placeholder.png" alt="placeholder" style="width:35px;height:35px;">
-					</div>
-				</div>
-				<div class="clearing">
-				</div>
-			</div>
-			
+		
 		</div>
 		
 		
 	</div>
 	
 	
-	</div>
+</div>
 </body>
 </html>

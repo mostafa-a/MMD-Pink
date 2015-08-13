@@ -9,11 +9,13 @@ div {
 transition-timing-function: ease-out;
     -webkit-transition: background 5s; /* Safari */
     transition: background 5s;
-
-} 
-
-#body {
 	
+	transition-timing-function: ease-out;
+    -webkit-transition: opacity 2s; /* Safari */
+    transition: opacity 2s;
+} 
+	
+#body {	
 }
 
 #backgroundWrapper {
@@ -28,20 +30,37 @@ transition-timing-function: ease-out;
 	height: 90%;
 	margin-left: auto;
     margin-right: auto;
-	padding: 10px 10px 10px 10px;
+	padding: 120px 10px 120px 10px;
+	visibility: hidden;
 	/*border: 1px solid #cfcfcf;*/
+
 }
 #box_top {
-	/*border: 1px solid #cfcfcf;*/
-	
+	/*border: 1px solid pink;*/
 }
 #box_axis {
-	height: 15%;
-	/*border: 1px solid #cfcfcf;*/
+	/*height: 35px;*/
+	font-family: 'CircularStd-Book';
+	/*border: 1px solid pink;*/
 }
 #box_bottom {
-	/*border: 1px solid #cfcfcf;*/
+	/*border: 1px solid pink;*/
 }
+
+#title {
+	position: absolute;
+	top: 250px;
+	left: 100px;
+	font-family: 'CircularStd-Book';
+	font-size: 1.1 em;
+	color: #FF91AF;
+	
+	transition-timing-function: ease-out;
+    -webkit-transition: opacity 2s; /* Safari */
+    transition: opacity 2s;
+	/*border: 1px solid pink;*/
+}
+
 .colLeft {
 	float: left;
 	width: 33%;
@@ -50,17 +69,14 @@ transition-timing-function: ease-out;
 }
 .colCenter {
 	margin: 0px 0px 0px 0px;
-	display: inline-block; width: 33%;
+	width: 33%;
+	display: inline-block;
 	/*border: 1px solid #cfcfcf;*/
 }
 .colRight {
 	float: right;
 	width: 33%;
 	margin: 0px 0px 0px 0px;
-	/*border: 1px solid #cfcfcf;*/
-}
-.objArea {
-	margin: 5px 5px 25px 5px; 
 	/*border: 1px solid #cfcfcf;*/
 }
 .stmtArea {
@@ -75,70 +91,55 @@ transition-timing-function: ease-out;
 
 #colLeftAxis {
 	float: left;
-	width: 10%;
+	width: 7%;
+	/*height: 30px;*/
 	margin: 0px 0px 0px 0px;
 	/*border: 1px solid #cfcfcf;*/
 }
 #colCenterAxis{
 	margin: 0px 0px 0px 0px;
-	display: inline-block; width: 80%;
+	display: inline-block;
+	padding: 20px 0px 0px 0px;
+	width: 85%;
+	/*height: 30px;*/
 	/*border: 1px solid #cfcfcf;*/
 }
 #colRightAxis {
 	float: right;
-	width: 10%;
+	width: 7%;
+	/*height: 30px;*/
 	margin: 0px 0px 0px 0px;
 	/*border: 1px solid #cfcfcf;*/
 }
-#axis {
-	margin-left: auto;
-    margin-right: auto;
-	width: 90%;
-	padding: 20px 0px 0px 130px;
-	font-family: 'CircularStd-Book';
-	}
-#axis_svg {
-	height: 80px;
+
+.axis_svg {
+	/*without margin and width definitions the svg element moved to far left*/
+	/*
 	margin-left: auto;
     margin-right: auto;	
 	width: 90%;
-	/*border: 1px solid #cfcfcf;*/
+	*/
 }
-#marker {
+
+.axisTypo {
+	font-size: 0.8em;
+	fill: #ffffff;
+	
 }
-#axisTypo {
-	fill: #878787;
-}
-/*OBJECTS*/
 
 
-.objContainer_topL {
-	display:inline;
-	margin: 0px 0px 0px 0px;
-	/*border: 1px solid #cfcfcf;*/
-}
-.objContainer_topR {
-	display:inline;
-	margin: 0px 0px 0px 0px;
-	/*border: 1px solid #cfcfcf;*/
-}
-.objContainer_bottL {
-	display: inline;
-	margin: 0px 0px 0px 0px;
-	/*border: 1px solid #cfcfcf;*/
-}
-.objContainer_bottR {
-	display: inline;
-	margin: 0px 0px 0px 50px;
-	/*border: 1px solid #cfcfcf;*/
-}
 
 /*STATEMENTS*/
 .stmtContainer {
+	visibility = 'visible';
+	opacity = '0';
 	font-family: 'CircularStd-Book';
 	font-size: 0.7em; /* 14px/16=0.875em */
 	/*border: 1px solid #cfcfcf;*/
 	color: #878787;
+	
+	
+	
 }
 
 
